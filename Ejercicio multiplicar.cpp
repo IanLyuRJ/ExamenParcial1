@@ -3,7 +3,7 @@
 int main() {
     int numero = 0;
 
-    printf("Escribe qué numero quieres multiplicar hasta el 10 (0 para salir del programa): ");
+    printf("Escribe que numero quieres multiplicar hasta el 10 (0 para salir del programa): ");
 
     while (1) {
         scanf("%d", &numero);
@@ -12,11 +12,13 @@ int main() {
             break;
         }
 		
-		int i;
-		for (i = 1; i <= 10; i++) {
-			int resultado = numero * i;
-			printf("Multiplo de %d: %d\n", numero, resultado);
-		}
+	
+		int i = 1;
+			while (i <= 10) {
+			    int resultado = numero * i;
+			    printf("Multiplo de %d: %d\n", numero, resultado);
+			    i++;
+}
     }
 
     return 0;
